@@ -16,6 +16,11 @@ a {
   Base Layout Styles
 ==================================== */
 
+/* ---- Universal Selector ---- */
+* {
+  box-sizing: border-box; /*Prevents padding in border width values expanding*/
+}
+
 /* ---- Navigation ---- */
 
 .name {
@@ -25,8 +30,8 @@ a {
 /* ---- Layout Containers ---- */
 
 .container {
-  width: 70%;
-  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .main-header {
@@ -41,3 +46,15 @@ a {
 }
 
 /* ---- Page Elements ---- */
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
