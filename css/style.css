@@ -2,13 +2,34 @@
   Base Element Styles
 ==================================== */
 
+/* ---- Universal Selector ---- */
+* {
+  box-sizing: border-box; /*Prevents padding in border width values expanding*/
+}
+
 body {
+	font-family: "Varela Round", sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
 }
 
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h2,
+h3,
 a {
-	color: #fff;
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
 	text-decoration: none;
 }
 
@@ -16,15 +37,28 @@ a {
   Base Layout Styles
 ==================================== */
 
-/* ---- Universal Selector ---- */
-* {
-  box-sizing: border-box; /*Prevents padding in border width values expanding*/
-}
-
 /* ---- Navigation ---- */
 
 .name {
-  margin: 0;
+  font-size: 1.25em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
 }
 
 /* ---- Layout Containers ---- */
@@ -35,8 +69,11 @@ a {
 }
 
 .main-header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 	background: #3acec2;
-  padding: 1em 0;
+	margin-bottom: 30px;
+}
 }
 
 .main-footer {
