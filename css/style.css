@@ -98,4 +98,10 @@ a {
     max-width: 1000px;
     margin: 0 auto;
   }
+
+	.name,
+	.main-nav,
+	.main-nav li {
+		display: inline;
+	}
 }
