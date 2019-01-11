@@ -114,6 +114,19 @@ a {
 		width: 240px;
 	}
 
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  .name {
+    float: left;
+  }
+
   .feat-img {
     width: 300px;
     float: left;
@@ -122,5 +135,11 @@ a {
     margin-bottom: 25px;
     padding: 10px;
     border: solid 1px #d9e4ea;
+  }
+
+  .clearfix::after { /*to clear floats, "::" means pseudo element*/
+    content: "";
+    display: table;
+    clear: both; /*directly related to floats*/
   }
 }
