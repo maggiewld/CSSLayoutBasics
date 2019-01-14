@@ -202,6 +202,19 @@ figcaption {
     padding: 10px;
     border: solid 1px #d9e4ea;
   } */
+
+  body {
+    padding-top: 68px;
+  }
+  
+  .main-header {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    width: 100%;
+    top: 0;
+  }
+
   .container {
     width: 90%;
     margin: 0 auto;
