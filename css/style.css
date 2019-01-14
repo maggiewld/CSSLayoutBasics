@@ -40,6 +40,7 @@ img {
 figure {
 	margin: 0;
 	line-height: 0;
+  position: relative;
 }
 
 figcaption {
@@ -48,6 +49,9 @@ figcaption {
 	color: #fff;
 	padding: 1em;
 	background: rgba(19,43,102, .85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* =================================
