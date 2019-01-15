@@ -206,13 +206,14 @@ figcaption {
   body {
     padding-top: 68px;
   }
-  
+
   .main-header {
     position: fixed;
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(0,0,0,.4);
     width: 100%;
     top: 0;
+    z-index: 1000; /*controls stacking order, only works on elements with a position property*/
   }
 
   .container {
